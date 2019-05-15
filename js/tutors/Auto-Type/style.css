@@ -1,0 +1,19 @@
+body{
+    background: #31a9f5;
+}
+
+.pen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.text {
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    padding: 1em 2em;
+    text-align: center;
+    font-size: 3.5em;
+}

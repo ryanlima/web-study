@@ -1,0 +1,77 @@
+ul{
+	list-style: none;
+}
+
+li input[type='checkbox'] {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+
+li label {
+	display: block;
+	cursor: pointer;
+}
+
+li ul{
+	height: 0;
+	overflow: hidden;
+}
+
+li ul a {
+	display: block;
+}
+
+input[type='checkbox']:checked + ul {
+	height: auto;
+}
+
+// DEMO
+
+html,
+body {
+	background-color: #ebebeb;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	border: 2px solid #fff;
+	width: 14rem;
+	margin: 6rem auto;
+	background-color: #156d81;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	box-shadow: 0 0 80px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+ul a{
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	color: white;
+}
+
+ul ul {
+		border: 0;
+		margin: 0;
+		box-shadow: 0;
+
+	}
+
+ul li a {
+	color: #fff;
+	border-bottom:  solid 1px rgba(255,255,255, 0.3);
+}
+
+ul ul a li:last-child a{
+	border-bottom: 0;
+}
+
+label {
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	background-color: #f4e060;
+}
+
