@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu scroll Fixo</title>
+</head>
+<body>
+    <nav id="menuHeader">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#">Produtos</a></li>
+            <li class="active"><a href="#">Lojas</a></li>
+            <li class="active"><a href="#">Empresa</a></li>
+            <li class="active"><a href="#">Contato</a></li>
+        </ul>
+        <form action="#" method="get" accept-charset="utf-8">
+            <input type="text" name="search">
+            <button type="submit">Pesquisar</button>
+        </form>
+    </nav>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium enim excepturi magnam mollitia. Ipsum commodi minus, dignissimos saepe non earum consequuntur impedit nisi! Culpa earum, cumque delectus soluta consectetur facilis!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium enim excepturi magnam mollitia. Ipsum commodi minus, dignissimos saepe non earum consequuntur impedit nisi! Culpa earum, cumque delectus soluta consectetur facilis!</p>
+</br></br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+    
+</body>
+</html>
+<script>
+    $(function(){   
+	var nav = $('#menuHeader');   
+	$(window).scroll(function () { 
+		if ($(this).scrollTop() > 150) { 
+			nav.addClass("menu-fixo");
+			$('body').css('padding-top', 70);
+		} else { 
+			nav.removeClass("menu-fixo"); 
+			$('body').css('padding-top', 0);
+		} 
+	});  
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
