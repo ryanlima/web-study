@@ -37,13 +37,13 @@ body{
 
 #conteudo-principal{
 	border: 1px solid red;
-	width: 63%;
+	width: 60%;
 	float: left;
 }
 
 #conteudo-secundario {
 	border: 1px solid red;
-	width: 34%;
+	width: 30%;
 	float: right;
 	background: #d1d1d1;
 }
