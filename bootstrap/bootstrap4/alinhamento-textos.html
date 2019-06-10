@@ -8,9 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <title>Bootstrap - Alinhamentos Textos</title>
+    <title>Bootstrap - Alinhamento de textos</title>
   </head>
-  <body style="margin-bottom: 200px; padding: 16px;">
+
+  <body style="margin-bottom: 200px;padding: 16px;">
+
 
     <!-- Parágrafo justificado -->
     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
@@ -20,14 +22,15 @@
     <br>
 
     <!-- 
-        Alinhamento responsivo - text-<tela>-<alinhamento>
+        Alinhamento responsivo - 
+        class text-<tela>-<alinhamento>
             tela: sm, md, lg, xl
             alinhamento: left, center, right
      -->
-    <p class="text-sm-right">tela &gt;= 576px</p><!--Small-->
-    <p class="text-md-right">tela &gt;=  768px</p><!--Medium-->
-    <p class="text-lg-right">tela &gt;= 992px</p><!--Large-->
-    <p class="text-xl-right">tela &gt;= 1200px</p><!--Extra Large-->
+    <p class="text-sm-center">tela &gt;= 576px</p><!--Small-->
+    <p class="text-md-center">tela &gt;=  768px</p><!--Medium-->
+    <p class="text-lg-center">tela &gt;= 992px</p><!--Large-->
+    <p class="text-xl-center">tela &gt;= 1200px</p><!--Extra Large-->
 
     <br>
     <br>
@@ -40,8 +43,9 @@
     <br>
 
     <!-- Elemento Inline para Block -->
-    <span  class="bg-success d-block">Lorem ipsum dolor 1</span>
-    <span  class="bg-success d-block">Lorem ipsum dolor 2</span>
+    <span class="bg-success d-block">Lorem ipsum dolor 1</span>
+    <br>
+    <span class="bg-success d-block">Lorem ipsum dolor 2</span>
 
     <br>
     <br>
@@ -49,15 +53,20 @@
     <!-- Elemento Inline-Block -->
     <div class="bg-warning">
         <h3 class="bg-success d-inline-block">Lorem ipsum</h3>
-        <h3 class="bg-success d-inline-block" style="margin-top: 50px;width:400px">Lorem ipsum dolor</h3>        
+        <h3 class="bg-success d-inline-block" style="margin-top: 50px;width: 400px;">Lorem ipsum dolor</h3>
     </div>
+    
 
+
+
+
+    
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

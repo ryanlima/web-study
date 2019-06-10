@@ -1,6 +1,10 @@
+
+
+
+
 /* Transicoes */
 
-#caixa{
+/* #caixa{
     width: 300px;
     height: 300px;
     background: orange;
@@ -9,17 +13,9 @@
 #caixa:hover{
     width: 400px;
     background: blue;
-    /* transition: width 3s, background 3s; */
+     transition: width 3s, background 3s; 
     transition: all 3s;
-}
-
-
-
-
-
-
-
-
+} */
 
 
 
