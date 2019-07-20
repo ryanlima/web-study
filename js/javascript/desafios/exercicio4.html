@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+</head>
+<body>
+    <input type="text" id="texto" onfocus="focado()" onblur="desfocado()">
+
+    
+    <script>
+        var textoInput =  document.getElementById("texto")
+        function focado(){
+            textoInput.style.background = "yellow"
+        }
+
+        function desfocado(){
+            var qtd = textoInput.value.length
+            if (qtd < 3){
+                textoInput.style.background = "red"
+            }else{
+                textoInput.style.background = "green"
+            }   
+        }
+    </script>
+</body>
+</html>

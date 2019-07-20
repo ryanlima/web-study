@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+</head>
+<body>
+   <h3>Manipulando estilo</h3>
+
+   <button type="button" onclick="modificaEstilo('#ff0000', '200px')">Vermelho</button>
+   <button type="button" onclick="modificaEstilo('#00ff00', '150px', '20px')">Verde</button>
+   <button type="button" onclick="modificaEstilo('#0000ff', '20px', '300px')">Azul</button>
+
+   <hr/>
+
+   <div style="border: solid 1px #000; width: 100px; height: 100px;" id="caixa"></div>
+   
+
+    <script>
+       function modificaEstilo(corDeFundo, l , a){
+            document.getElementById('caixa').style.background = corDeFundo
+            document.getElementById('caixa').style.width = l
+            document.getElementById('caixa').style.height = a
+       }
+    </script>
+</body>
+</html>

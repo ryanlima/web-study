@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+    <script>
+       var num1 = parseFloat(prompt("Digite num1"))
+       var op = prompt("Digite uma operação - 'soma' ou 'subtração' ")
+       var num2 = parseFloat(prompt("Digite num2"))
+
+       function calculo(num1, num2, op){
+           switch (op) {
+               case 'soma':
+                    return num1 + num2
+                    break
+
+               case 'subtração':
+                   return num1 - num2
+                   break;
+           
+               default:
+                   document.write("Nenhum Operação Selecionada")
+                   break;
+           }
+       }
+
+       document.write("O Resultado é : "+calculo(num1,num2,op))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
