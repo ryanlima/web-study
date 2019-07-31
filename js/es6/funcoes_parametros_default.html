@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+       function contaUmaHistoria(personagem = 'Fubá', atividade = 'Correr',dono = 'joão'){
+           document.write(`Era uma vez um cachorro chamado ${personagem}, ele adorava ${atividade}. seu dono era o ${dono} e eles viveram felizes para sempre`)
+       }
+
+       contaUmaHistoria(undefined, 'Enterrar ossos', 'Pedro')
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+    
+</body>
+</html>
