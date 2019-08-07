@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+       class Sofa {
+           constructor(qtde_lugares, reclinavel , cor){
+               this.qtde_lugares = qtde_lugares
+               this.reclinavel = reclinavel
+               this.cor = cor
+           }
+
+           reclinarSofa(){
+               if(this.reclinavel === true){
+                   console.log('Reclinou')
+               }else {
+                    console.log('Sofá não é reclinavel')
+               }
+           }
+       }
+
+       let sofa = new Sofa(4, false, 'azul')
+       let sofa2 = new Sofa(4, true, 'vermelha')
+       //let cadeira2 = new Cadeira(1, true, 'vermelha')
+       //console.log(cadeira)
+
+     
+       sofa.reclinarSofa()
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+    
+</body>
+</html>
