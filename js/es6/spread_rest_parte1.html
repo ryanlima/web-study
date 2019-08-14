@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        //contexto spread
+
+        //string
+        let tituloArtigo = 'Como utilizar o operador rest/spread'
+
+        console.log(tituloArtigo)
+        console.log(...tituloArtigo)
+        console.log([...tituloArtigo])
+
+        //arrays
+
+        let listaCursos1 = ['Nodejs e MongoDB', 'ES6, TS e Angular4']
+        let listaCursos2 = ['Multiplatadorma Android/IOS', 'Introdução ao GNU/Linux']
+        let listaCursosCompleto = ['Web Completo', 'Android Completo', ...listaCursos1, ...listaCursos2]
+
+        console.log(listaCursosCompleto)
+
+        //objetos
+        let pessoa = { nome: 'João', idade: 27 }
+        let clone = { endereco: 'RuaABC', ...pessoa}
+
+        console.log(clone)
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+    
+</body>
+</html>
