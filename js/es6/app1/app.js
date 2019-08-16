@@ -22,7 +22,7 @@ class Despesa{
 class BD {
 
     constructor(){
-//        let id = 
+        // let id = 
         //console.log(id)
         if(!localStorage.hasOwnProperty('id')){
             localStorage.setItem('id', 0)
@@ -64,6 +64,10 @@ class BD {
 
         return despesas
     }
+
+    pesquisar(despesa){
+        console.log(despesa)
+    }
 }
 
 let bd = new BD()
@@ -77,7 +81,7 @@ function cadastrarDespesa(){
     let descricao = document.getElementById('descricao')
     let valor = document.getElementById('valor')
 
-    //console.log(ano.value, mes.value, dia.value, tipo.value, descricao.value, valor.value)
+    console.log(ano.value, mes.value, dia.value, tipo.value, descricao.value, valor.value)
     let despesa = new Despesa(
         ano.value, 
         mes.value, 
@@ -95,7 +99,15 @@ function cadastrarDespesa(){
             'Despesa Salva Com Sucesso', 
             'Despesa foi cadastrada com sucesso!', 
             'Voltar')
-        
+
+        ano.value = ''
+        mes.value = ''
+        dia.value = ''
+        tipo.value = ''
+        descricao.value = ''
+        valor.value = ''
+        console.log('depois - '+ ano.value, mes.value, dia.value, tipo.value, descricao.value, valor.value)            
+        console.log('depois - '+ dia,descricao, valor)            
     } else{
         //dialog de erro
         exibeModal(
@@ -130,7 +142,7 @@ function carregaListaDespesas(){
     despesas = bd.recuperarTodosRegistros()
 
     //selecionado elemento tbody
-    var listaDespesas = document.getElementById('listaDespesas')
+    let listaDespesas = document.getElementById('listaDespesas')
     console.log(listaDespesas)
 
     // <tr>
@@ -143,7 +155,7 @@ function carregaListaDespesas(){
     despesas.forEach(function(d){
         //criando o tr
         let linha = listaDespesas.insertRow()
-console.log(d)
+
         //ajustar tipo
         switch(d.tipo){
             case '1': d.tipo = 'Alimentação'
@@ -163,4 +175,16 @@ console.log(d)
         linha.insertCell(2).innerHTML = d.descricao
         linha.insertCell(3).innerHTML = d.valor
     })
+}
+
+function pesquisarDespesa(){
+    let ano = document.getElementById('ano').value
+    let mes = document.getElementById('mes').value
+    let dia = document.getElementById('dia').value
+    let tipo = document.getElementById('tipo').value
+    let descricao = document.getElementById('descricao').value
+    let valor = document.getElementById('valor').value
+
+    let despesa = new Despesa(ano,mes,dia,tipo, descricao, valor)
+    bd.pesquisar(despesa)
 }
